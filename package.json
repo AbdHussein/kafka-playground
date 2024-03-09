@@ -1,0 +1,14 @@
+{
+  "name": "kafka-playground",
+  "version": "1.0.0",
+  "description": "A code sample for using Apache Kafka with nodeJS along with Terraform for infrastructure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abdulrahmaan Hussein",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
