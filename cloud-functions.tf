@@ -3,11 +3,9 @@ resource "google_cloudfunctions_function" "function" {
   description = "a sample cloud founction created by terraform"
   runtime     = "nodejs16"
 
-  available_memory_mb   = 128
-  source_archive_bucket = google_storage_bucket.bucket.name
-  source_archive_object = google_storage_bucket_object.archive.name
-  trigger_http          = true
-  entry_point           = "helloGET"
+  available_memory_mb = 128
+  trigger_http        = true
+  entry_point         = "helloGET"
 }
 
 # IAM entry for all users to invoke the function
